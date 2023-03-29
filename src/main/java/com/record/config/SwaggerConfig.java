@@ -18,7 +18,6 @@ import static java.util.Collections.singletonList;
 /**
  * Swagger
  * 1、注释中的 2、3 分别代表 Swagger 的版本，对应 pom.xml
- * 2、关于更多的信息，请参考 微信公众号【京茶吉鹿】
  */
 @Configuration
 @EnableSwagger2  // 2
