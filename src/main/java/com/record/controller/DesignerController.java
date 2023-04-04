@@ -26,7 +26,7 @@ public class DesignerController {
     private DesignerService designerService;
 
 
-    @ApiOperation(value = "查询所有的设计师")
+    @ApiOperation(value = "查询团队信息")
     @GetMapping("/findDesigners")
     public Result findDesigners(){
         List<Designer> list = designerService.selectDesigners();

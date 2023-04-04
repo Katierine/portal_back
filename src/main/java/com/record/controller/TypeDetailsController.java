@@ -20,14 +20,14 @@ import java.util.List;
  *
  */
 @RestController
-@Api(tags = "电梯种类详情")
+@Api(tags = "产品种类详情")
 public class TypeDetailsController {
 
     @Autowired
     private TypeDetailsService typeDetailsService;
 
 
-    @ApiOperation(value = "通过电梯种类id查询所有信息")
+    @ApiOperation(value = "通过产品种类id查询所有信息")
     @GetMapping("/findTypeDetailsByTypeId/{typeId}")
     public Result findTypeDetailsByTypeId(@PathVariable Integer typeId){
         List<TypeDetails> typeDetails = typeDetailsService.selectTypeDetailsByTypeId(typeId);

@@ -19,14 +19,14 @@ import java.util.List;
  *
  */
 @RestController
-@Api(tags = "电梯类型")
+@Api(tags = "产品类型")
 public class TypeController {
 
     @Autowired
     private TypeService typeService;
 
 
-    @ApiOperation(value = "获取所有的电梯种类")
+    @ApiOperation(value = "获取所有的产品种类")
     @GetMapping("/findAllType")
     public Result findAllType(){
         List<Type> types = typeService.selectAllType();
